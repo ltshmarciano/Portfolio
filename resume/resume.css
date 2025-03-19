@@ -1,0 +1,506 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F4E3;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background: #2A2B2A;
+    width: 30%;
+    margin: 5px auto;
+}
+
+h2, p {
+    font-family: Poppins, Roboto, Verdana, san-serif;
+}
+
+ul {
+    font-family: Georgia, Cambria, serif;
+}
+
+ul li {
+    font-family: inherit;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    margin: 20px 100px;
+    font-size: 1.0em;
+}
+
+/* ---------------- HEADER ---------------- */
+
+li, a, button {
+    font-family: Georgia, Cambria, serif;
+    font-size: 1.0em;
+    color: #2A2B2A;
+    text-decoration: none;
+}
+
+header {
+    background-color: #F8F4E3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #FF8966;
+    font-size: 1.1em;
+}
+
+.nav-links li a.active {
+    position: relative;
+}
+
+.nav-links li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: #E5446D;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(229, 68, 109, 1);
+    color: #F8F4E3;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(229, 68, 109, 0.8);
+}
+
+/* ---------------- SECTION BUTTONS ---------------- */
+.section-button {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    padding: 50px 25%;
+    width: 100%;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.container {
+    display: flex;
+}
+
+/* ---------------- OVERVIEW ---------------- */
+.overview {
+    background-color: #E5446D;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.overview nav {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.overview nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.overview nav li {
+    width: 100%;
+}
+
+.overview nav li a {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 0.75rem 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #F8F4E3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.overview nav li a:hover {
+    background-color: #F8F4E3;
+    color: #E5446D;
+    text-shadow: 0px 0px 1px #2A2B2A;
+}
+
+.overview img {
+    border-radius: 30px;
+}
+
+/* ---------------- CONTENT ---------------- */
+.content {
+    margin: 20px 50px;
+}
+
+/* ---------------- ABOUT ---------------- */
+.about-section {
+    margin-top: 30px;
+    padding: 100px 50px;
+    border-left: #2A2B2A solid 5px;
+    background-color: hsla(44, 7%, 41%, 0.144);
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.about-section h1, h2, p {
+    text-align: left;
+    text-indent: 0;
+    margin: 0px;
+    margin-right: 50px;
+}
+
+.about-section h1 {
+    font-size: 5.5em;
+    background: linear-gradient(to right, #e5446d, #ff8966, #ff8966);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+}
+
+.about-section strong {
+    color:#E5446D;
+    font-weight: bold;
+}
+
+/* ---------------- SKILLS SECTION ---------------- */
+.skills-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-section hr {
+    width: 50%;
+    margin: 10px 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.skills li {
+    list-style: none;
+    border: 1px solid #2A2B2A;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.skills li:hover {
+    background-color: #E5446D;
+    color: #F8F4E3;
+    transition: all 0.3s ease;
+}
+
+.skills-section img {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* ---------------- WORK SECTION ---------------- */
+.work-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.work-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.work-section hr {
+    width: 50%;
+    margin: 10px 0 20px;
+}
+
+.work-section img {
+    margin-top: 20px;
+}
+
+.work-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-item {
+    background-color: hsla(345, 76%, 58%, 0.082);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #E5446D; 
+    margin: 0;
+}
+
+h3 {
+    font-family: Georgia, Cambria, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.job-tasks {
+    padding-left: 40px;
+    list-style-position: outside;
+}
+
+
+.job-tasks li {
+    margin-bottom: 5px;
+}
+
+
+/* ---------------- EDUCATIONAL ATTAINMENT SECTION ---------------- */
+.education-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.education-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-item {
+    background-color: hsla(345, 76%, 58%, 0.082);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #E5446D; 
+    margin: 0;
+}
+
+.education-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.education-details {
+    font-size: 16px;
+}
+
+.education-list {
+    padding-left: 40px;  /* Ensures proper indentation */
+    list-style-position: outside;  /* Keeps bullets outside */
+    list-style-type: disc;
+}
+
+.school-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.school-logos img {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.school-logos img:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+/* ---------------- TRAININGS AND SEMINARS ---------------- */
+
+.training-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.training-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.training-section hr {
+    width: 50%;
+    margin: 10px 0 20px;
+}
+
+.seminar-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.seminar-year h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E5446D;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.seminar-item {
+    background-color: hsla(345, 76%, 58%, 0.082);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #E5446D; 
+    margin: 5px 0;
+}
+
+.seminar-title {
+    font-weight: bold;
+}
+
+/* ---------------- INTEREST SECTION ---------------- */
+.interest-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.interest-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.interest-section hr {
+    width: 50%;
+    margin: 10px 0;
+}
+
+.interest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.interest li {
+    list-style: none;
+    border: 1px solid #2A2B2A;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.interest li:hover {
+    background-color: #E5446D;
+    color: #F8F4E3;
+    transition: all 0.3s ease;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    margin-bottom: 0;
+    padding: 0px 0px;
+    background-color: #706C61;
+}
+
+footer p {
+    background-color: #706C61;
+    text-align: right;
+    color: #F8F4E3;
+    font-size: 0.8em;
+    padding: 0px 0px;
+}
